@@ -147,7 +147,7 @@ function player_loaded() {
     });
     $('.mute').on('click', function() {
       controller.set_mute(false);
-      $('.mute').html('<span class="icon is-small"><i class="fas fa-volume-on"></i></span>');
+      $('.mute').html('<span class="icon is-small"><i class="fas fa-volume-up"></i></span>');
       $('.mute').addClass('sound');
       $('.mute').removeClass('mute');
     });
