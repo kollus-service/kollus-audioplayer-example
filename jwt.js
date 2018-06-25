@@ -19,7 +19,7 @@ var JWT = function() {
       return encodedHeader + '.' + encodedData + '.' + signature;
     },
     this.url = function(mode, token, custom_key) {
-      return 'http://v.kr.kollus.com/' + mode + '?jwt=' + token + '&custom_key=' + custom_key;
+      return 'https://v.kr.kollus.com/' + mode + '?jwt=' + token + '&custom_key=' + custom_key;
     },
     this.payload = function(expt, cuid, mck) {
       var expired = parseInt(new Date().getTime() / 1000) + expt;
