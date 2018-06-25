@@ -142,13 +142,13 @@ function player_loaded() {
     });
 
     $('.sound').on('click', function() {
-      controller.set_mute(true);
+      controller.mute();
       $('.sound').html('<span class="icon is-small"><i class="fas fa-volume-off"></i></span>');
       $('.sound').addClass('mute');
       $('.sound').removeClass('sound');
     });
     $('.mute').on('click', function() {
-      controller.set_mute(false);
+      controller.mute();
       $('.mute').html('<span class="icon is-small"><i class="fas fa-volume-up"></i></span>');
       $('.mute').addClass('sound');
       $('.mute').removeClass('mute');
