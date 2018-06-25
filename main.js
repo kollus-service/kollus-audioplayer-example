@@ -147,7 +147,7 @@ function player_loaded() {
       $('.sound').addClass('mute');
       $('.sound').removeClass('sound');
     });
-    $('.mute').on('click', function() {
+    $(document).on('click', '.mute', function() {
       controller.mute();
       $('.mute').html('<span class="icon is-small"><i class="fas fa-volume-up"></i></span>');
       $('.mute').addClass('sound');
