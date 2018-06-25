@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kollus Audio Player Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="bulma-extensions.min.css">
+  <link rel="stylesheet" href="bulma-slider.min.css">
+  <link rel="stylesheet" href="bulma-switch.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Kollus Audio Player Example
+        </h1>
+        <h2 class="subtitle">
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <nav class="panel">
+      <div class="panel-heading level" style="margin-bottom:0px;">
+        <span>PlayList</span>
+        <div class="field">
+          <input id="autoplay" type="checkbox" name="switchRtlExample" class="switch is-rtl is-danger" checked="checked">
+          <label for="switchRtlExample">자동재생</label>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+  <div class="container audio">
+    <iframe id="player" src="a" allowfullscreen></iframe>
+  </div>
+  <div class="container audio_controller">
+    <progress class="progress is-danger" value="0" max="0" style="height:3px;margin-bottom:5px;"></progress>
+    <nav class="level">
+      <div class="level-left">
+        <div class="level-item">
+          <div class="buttons">
+            <a class="button fsb">
+              <span class="icon is-small">
+                <i class="fa fa-step-backward"></i>
+              </span>
+            </a>
+            <a class="button fb">
+              <span class="icon is-small">
+                <i class="fa fa-backward"></i>
+              </span>
+            </a>
+            <a class="button play">
+              <span class="icon is-small">
+                <i class="fas fa-play"></i>
+              </span>
+            </a>
+            <a class="button ff">
+              <span class="icon is-small">
+                <i class="fas fa-forward"></i>
+              </span>
+            </a>
+            <a class="button fsf">
+              <span class="icon is-small">
+                <i class="fas fa-step-forward"></i>
+            </span>
+            </a>
+            <a class="button repeat1"><span>A-B</span></a>
+            <span id="seconds">00:00</span>
+            <span>&nbsp;/&nbsp;</span>
+            <span id="duration">00:00</span>
+            <a class="button m-sp">
+              <span class="icon is-small">
+                <i class="fas fa-minus"></i>
+            </span>
+            </a>
+            <span id="playrate">0.0</span>
+            <span>&nbsp;x&nbsp;</span>
+            <a class="button p-sp">
+              <span class="icon is-small">
+                <i class="fas fa-plus"></i>
+            </span>
+            </a>
+            <a class="button">
+              <span class="icon is-small">
+                <i class="fas fa-volume-off"></i>
+            </span>
+            </a>
+            <input class="volume slider is-info is-small" step="1" min="0" max="100" value="50" type="range">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  <div class="container">
+    <div class="field">
+      <div class="control">
+        <textarea class="textarea is-primary" palceholder="Logs" type="text" rows="5" readonly></textarea>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="loader_container">
+    <span>
+      <div class="loader"></div>
+      <div class="loader_msg">
+        <span id="errMessage">로딩중</span>
+  </div>
+  </span>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+  <script src="jwt.js"></script>
+
+  <script src="bulma-extensions.min.js"></script>
+  <script src="bulma-slider.min.js"></script>
+  <script src="media.js"></script>
+  <script src="kollus.videogateway-controller.min.js"></script>
+  <script src="media.js"></script>
+  <script src="ui.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
