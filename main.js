@@ -140,10 +140,14 @@ function player_loaded() {
     });
 
     $('.sound').on('click', function() {
+      controller.set_mute(true);
+      $('.sound').html('<span class="icon is-small"><i class="fas fa-volume-off"></i></span>');
       $('.sound').addClass('mute');
       $('.sound').removeClass('sound');
     });
     $('.mute').on('click', function() {
+      controller.set_mute(false);
+      $('.mute').html('<span class="icon is-small"><i class="fas fa-volume-on"></i></span>');
       $('.mute').addClass('sound');
       $('.mute').removeClass('mute');
     });
@@ -181,6 +185,7 @@ function evt_click_music_item(evt) {
 
 }
 window.onload = function() {
+  // api access token , channel_key
   var media = new MEDIA('7ge80tfvz51x2606', '2l6x2r5n');
   var list = media.list();
   if (list.count != 0) {
