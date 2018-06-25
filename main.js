@@ -60,7 +60,9 @@ function player_loaded() {
       $('progress').attr('max', controller.get_progress().duration);
       $('progress').attr('value', controller.get_progress().position);
       $('#playrate').html(parseFloat(controller.get_speed()));
-      $('.volume').val(controller.get_volume())
+      var log = $('textarea').val();
+      $('textarea').val(log + $('#player').attr('src') + ' Player Ready \r\n');
+      $('.volume').val(controller.get_volume());
     }).on('loaded', function() {}).on('jumpstepchange', function(jumpstep) {}).on('scalemode', function(scalemode) {}).on('speedchange', function(speed) {
       $('#playrate').html(parseFloat(controller.get_speed()));
     }).on('topmost', function(topmost) {}).on('error', function(error_code) {}).on('videosettingchange', function(videosetting) {}).on('html5_video_supported', function(is_supported) {});
