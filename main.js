@@ -46,7 +46,15 @@ function player_loaded() {
       $('.pause').addClass('play');
       $('.pause').removeClass('pause');
     }).on('done', function() {
-      if ($('#autoplay').attr('checked') == 'checked') {
+
+      //곡 재생 완료시 다음 동작 설정
+      if($('input:checkbox[id="replay"]').is(':checked')){
+        //한곡 재생 반복
+        controller.play(0);
+      }
+      else{
+      if ($('input:checkbox[id="autoplay"]').is(':checked')) {
+        //전곡 재생 반복
         var idx = $('.music-item.active').data('idx');
         var length = $('.music-item').length;
         if (length - 1 == idx) {
@@ -55,6 +63,7 @@ function player_loaded() {
           $($('.music-item')[idx + 1]).click();
         }
       }
+    }
     }).on('ready', function() {
       controller.play();
       $('progress').attr('max', controller.get_progress().duration);
@@ -188,7 +197,7 @@ function evt_click_music_item(evt) {
 }
 window.onload = function() {
   // api access token , channel_key
-  var media = new MEDIA('7ge80tfvz51x2606', '2l6x2r5n');
+  var media = new MEDIA('7ge80tfvz51x2606', '7zllh4b5');
   var list = media.list();
   if (list.count != 0) {
     var itemList = makeItem(list);

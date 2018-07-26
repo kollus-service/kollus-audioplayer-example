@@ -38,7 +38,7 @@ var makeItem = function(list) {
     var ml = createElement('figure', null, 'media-left');
     var p_img = createElement('p', null, 'image is-64x64');
     var img = createElement('img');
-    img.setAttribute('src', item.title.split('/')[1].replace(/ /gi,'').toLowerCase() + '.jpg');
+    item.poster ? img.setAttribute('src', item.poster) : img.setAttribute('src', 'basic.jpeg');
     p_img.appendChild(img);
     ml.appendChild(p_img);
     media.appendChild(ml);

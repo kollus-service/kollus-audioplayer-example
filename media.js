@@ -27,6 +27,7 @@ var MEDIA = function(access_key, channel_key) {
           item.title = items[idx].title;
           item.key = items[idx].media_content_key;
           item.duration=items[idx].duration;
+          item.poster = items[idx].poster_url;
           result.push(item);
         }
         return result;
