@@ -132,7 +132,7 @@ var get_url = function(cuid, mck) {
 var load_player = function() {
   player = null;
   try {
-    player = new Kollus.Videogatewayplayer({
+    player = new Kollus.VideogatewayController({
       target_window: document.getElementById('player').contentWindow
     });
 
