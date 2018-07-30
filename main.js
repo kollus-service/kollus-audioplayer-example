@@ -201,7 +201,7 @@ window.onload = function() {
   var list = media.list();
   if (list.count != 0) {
     var itemList = makeItem(list);
-    var panel = document.querySelector('.panel');
+    var panel = getElementBySelector('.panel');
 
     for (var idx = 0; idx < itemList.length; idx++) {
       panel.appendChild(itemList[idx]);

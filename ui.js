@@ -1,4 +1,3 @@
-
 var getElement = function(id){
   return document.getElementById(id);
 };
@@ -14,6 +13,25 @@ var getElementsBySelector = function(selector){
 };
 var getElementsByClassName = function(className){
   return document.getElementsByClassName(className);
+}
+var addEventById = function(idName, evtName, func){
+  document.getElementById(idName).addEventListener(evt, func);
+}
+var addEventBySelector = function(selector, evtName, func){
+  var elements = getElementsBySelector(selector);
+  if (!elements) return;
+  for(var idx = 0; idx < elements.length; idx++){
+    elements[idx].addEventListener(evtName, func);
+  }
+}
+var removeClass = function(element, clss){
+  var classNames = element.className;
+  if(!clss) return;
+  var regex = new Regexp('\b' + clss + '\b', 'gi');
+  element.className = classNames.replace(regex, '');
+}
+var addClass = function(element, clss){
+  element.className += ' ' + className;
 }
 
 var createElement = function(tag, id, className, innerHtml) {

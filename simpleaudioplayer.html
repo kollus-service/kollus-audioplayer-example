@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="X-UA-Compitable" content="IE=edge" />
+  <meta charset="utf-8" />
+  <title>Kollus Simple Audio Player Example</title>
+  <link href="simpleaudioplayer.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+  <div class="title">
+    <h1>Kollus Simple Audio Player</h1>
+  </div>
+  <div class="body">
+    <div class="kollus_audio_player_container">
+      <iframe id="player" class="player" src="http://v.kr.kollus.com/s?jwt=ew0KICAidHlwIjogIkpXVCIsDQogICJhbGciOiAiSFMyNTYiDQp9.ew0KICAiY3VpZCI6ICJDTElFTlRfVVNFUl9JRCIsDQogICJleHB0IjogMTUzMzAzMzc5MzMzMCwNCiAgIm1jIjogWw0KICAgIHsNCiAgICAgICJtY2tleSI6ICJMNEFMQWpmaiINCiAgICB9DQogIF0NCn0.83mKOn3jBUAifVPU9t4w5yYMoUCqsOhobYjiHvCZP64&custom_key=1ba769ae9972603d72658b8566dc4fa2e5782dcfede54c527831b70f4aa9d7f3" style="width:0;height:0;resize:none;"></iframe>
+    </div>
+    <div class="kollus_audio_player_controller">
+      <div id="progress" class="slider progress">
+        <div id="p_value" class="value"></div>
+        <div id="r_value" class="r_value"></div>
+      </div>
+      <div class="buttons">
+        <button id="rewind" class="ctrl_btn rewind" alt="Rewind"><img src="/img/rewind.png" /></button>
+        <button id="play" class="ctrl_btn play" alt="play"><img src="/img/play-button.png" /></button>
+        <button id="pause" class="ctrl_btn pause hide" alt="pause"><img src="/img/pause.png" /></button>
+        <button id="forward" class="ctrl_btn forward" alt="forward"><img src="/img/fast-forward.png" /></button>
+        <div class="ctrl_div duration">
+          <span id="seconds" class="txt">00:00</span> / <span id="duration" class="txt">00:00</span>
+        </div>
+        <button id="repeat1" class="ctrl_btn repeat" all="repeat section"><span>A-B</span></button>
+        <button id="repeat2" class="ctrl_btn repeat hide" all="repeat section"><span>A-B</span></button>
+        <button id="repeat3" class="ctrl_btn repeat hide" all="repeat section"><span>A-B</span></button>
+        <button id="s_down" class="ctrl_btn s_down" alt="volume_down"><img src="/img/minus.png" /></button>
+        <div class="ctrl_div speed">
+          <span id="s_val" class="s_val">1.0</span><span>x</span>
+        </div>
+        <button id="s_up" class="ctrl_btn s_up" alt="speed up"><img src="/img/plus.png" /></button>
+        <button id="replay" class="ctrl_btn replay" alt="replay"><img src="/img/no_replay.png" /></button>
+        <button id="no_replay" class="ctrl_btn replay hide" alt="replay"><img src="/img/replay.png" /></button>
+        <button id="mute" class="ctrl_btn mute" alt="mute"><img src="/img/cancel.png" /></button>
+        <button id="sound" class="ctrl_btn mute hide" alt="mute"><img src="/img/speaker.png" /></button>
+        <button id="v_up" class="ctrl_btn v_up hide" alt="volume_up"><img src="/img/down-arrow.png" /></button>
+        <button id="v_down" class="ctrl_btn v_down hide" alt="volume_down"><img src="/img/up-arrow.png" /></button>
+        <div class="volume_container">
+          <div id="volume" class="slider volume">
+            <div id="v_value" class="value"></div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span style="color:white;apiaapi">Kollus Simple Audio Player. Catenoid Inc Service team. 2018.</span>
+  </div>
+  <script src="./kollus.videogateway-controller.min.js"></script>
+
+  <!--[if IE 8]><script src="./simpleaudioplayer-ie8.js"></script><![endif]-->
+  <!--[if gt IE 8]><!--><script src="./simpleaudioplayer.js"></script><!--<![endif]-->
+</body>
+
+</html>

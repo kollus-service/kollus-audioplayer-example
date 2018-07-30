@@ -3,7 +3,7 @@ var MEDIA = function(access_key, channel_key) {
   this._access_key = access_key;
   this._channel_key = channel_key;
   this.list = function() {
-    var url = 'https://api.kr.kollus.com/0/media/channel/media_content?access_token=' + this._access_key + '&channel_key=' + this._channel_key;
+    var url = 'http://api.kr.kollus.com/0/media/channel/media_content?access_token=' + this._access_key + '&channel_key=' + this._channel_key;
     var request = new XMLHttpRequest();
     request.open("GET", url, false);
     request.send(null);
