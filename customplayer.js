@@ -197,7 +197,7 @@ function createContentList(){
   }
 }
 createContentList();
- if(isIE() > 9 || !isIE()){
+ if(isIE() >= 9 || !isIE()){
   document.addEventListener('DOMContentLoaded', function() {
     var playerIframe = document.getElementById('player');
     playerIframe.addEventListener('load', function() {
