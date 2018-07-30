@@ -47,13 +47,13 @@ function setNavigator(){
 }
 function hideWrapper(){
   setHide('w_top');
-  setHide('r_right');
-  setHide('r_bottom');
+  setHide('w_right');
+  setHide('w_bottom');
 };
 function viewWrapper(){
   removeHide('w_top');
-  removeHide('r_right');
-  removeHide('r_bottom');
+  removeHide('w_right');
+  removeHide('w_bottom');
 };
 //컨텐츠 목록 가져오는 함수
 var get_contents = function() {
