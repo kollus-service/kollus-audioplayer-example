@@ -21,6 +21,8 @@
     height: 30px;
     line-height: 30px;
     background: rgba(255,255,255,0.4);
+		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#e6ffffff,endColorStr=#e6ffffff)";
+
 }
 .w_right{
 	position: absolute;
@@ -28,6 +30,8 @@
 	width:100px;
 	height: 30px;
 	background: rgba(100,100,200,0.7);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#e6ffffff,endColorStr=#e6ffffff)";
+
 }
 
 .w_bottom {
@@ -38,6 +42,9 @@
     line-height: 30px;
     left: 100px;
     background: rgba(100,100,200,0.7);
+		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#e6ffffff,endColorStr=#e6ffffff)";
+
+
 }
 .btn {
 	width:30px;
@@ -49,7 +56,7 @@
 }
 .btn:hover{
 	background: rgba(255, 255, 255, 0.3);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#e6ffffff,endColorStr=#e6ffffff)";
 }
 .btn-text {
 	width: 120px;
@@ -90,6 +97,8 @@
     overflow: auto;
     margin: auto;
     background: rgba(255, 255,255, 0.1);
+		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#ffffffff,endColorStr=#ffffffff)";
+
 }
 .card {
 	position: relative;
@@ -101,6 +110,8 @@
 	height: 90px;
 	display: inline-flex;
 	background: rgba(200,200,200,0.4);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#e6ffffff,endColorStr=#e6ffffff)";
+
 }
 .card img {
 	width:146px;

@@ -154,6 +154,7 @@ var load_player = function() {
         if(is_all_replay){
           setTimeout(function(){
              list_current = list_current + 1 == contents.length ? 0 : list_current + 1;
+             var playerIframe = document.getElementById('player');
              playerIframe.setAttribute('src', get_url('TEST', contents[list_current].mck));
              setNavigator();
              setActiveCard(list_current);
