@@ -21,7 +21,7 @@
     height: 30px;
     line-height: 30px;
     background: rgba(255,255,255,0.4);
-		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#e6ffffff,endColorStr=#e6ffffff)";
+		background-color:  #6464C8;
 
 }
 .w_right{
@@ -30,8 +30,7 @@
 	width:100px;
 	height: 30px;
 	background: rgba(100,100,200,0.7);
-	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#e6ffffff,endColorStr=#e6ffffff)";
-
+	background-color:  #6464C8;
 }
 
 .w_bottom {
@@ -42,7 +41,7 @@
     line-height: 30px;
     left: 100px;
     background: rgba(100,100,200,0.7);
-		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#e6ffffff,endColorStr=#e6ffffff)";
+		background-color: #6464C8;
 
 
 }
@@ -56,7 +55,7 @@
 }
 .btn:hover{
 	background: rgba(255, 255, 255, 0.3);
-	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#e6ffffff,endColorStr=#e6ffffff)";
+	background-color: white;
 }
 .btn-text {
 	width: 120px;
@@ -97,7 +96,7 @@
     overflow: auto;
     margin: auto;
     background: rgba(255, 255,255, 0.1);
-		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#ffffffff,endColorStr=#ffffffff)";
+		background-color: white;
 
 }
 .card {
@@ -110,8 +109,7 @@
 	height: 90px;
 	display: inline-flex;
 	background: rgba(200,200,200,0.4);
-	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#e6ffffff,endColorStr=#e6ffffff)";
-
+	background-color: #C8C8C8;
 }
 .card img {
 	width:146px;
