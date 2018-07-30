@@ -45,12 +45,12 @@ function setNavigator(){
     removeHide('next')
   }
 }
-function viewWrapper(){
+function hideWrapper(){
   setHide('w_top');
   setHide('r_right');
   setHide('r_bottom');
 };
-function hideWrapper(){
+function viewWrapper(){
   removeHide('w_top');
   removeHide('r_right');
   removeHide('r_bottom');
