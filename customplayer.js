@@ -200,7 +200,7 @@ createContentList();
  if(isIE() > 9 || !isIE()){
   document.addEventListener('DOMContentLoaded', function() {
     var playerIframe = document.getElementById('player');
-    playerIframe.addEventListener('DOMContentLoaded', function() {
+    playerIframe.addEventListener('load', function() {
       player = undefined;
       if (player == undefined) {
         load_player();
