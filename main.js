@@ -191,7 +191,7 @@ function evt_click_music_item(evt) {
   var token = jwt.create(payload, 'hdyang2');
   var url = jwt.url('s', token, '5c5b5d50d74a56ea08b17ea5d765b45b6ce1bd86bb6d02fd0a88faec7a02447d');
   var player = getElement('player');
-  player.setAttribute('src', url);
+  player.setAttribute('src', url+'&player_version=v3');
   delete jwt;
 
 }
