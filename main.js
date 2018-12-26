@@ -1,5 +1,6 @@
+var controller;
 function player_loaded() {
-  var controller;
+
   try {
     controller = new Kollus.VideogatewayController({
       target_window: getElement('player').contentWindow
