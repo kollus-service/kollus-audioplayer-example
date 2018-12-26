@@ -201,10 +201,10 @@ window.onload = function() {
   var list = media.list();
   if (list.count != 0) {
     var itemList = makeItem(list);
-    var panel = getElementBySelector('.panel');
+    var panel = $('.panel');
 
     for (var idx = 0; idx < itemList.length; idx++) {
-      panel.appendChild(itemList[idx]);
+      panel.append(itemList[idx]);
     }
     var loader = document.querySelector('.loader_container');
     loader.className = 'loader_container hide';
