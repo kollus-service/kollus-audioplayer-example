@@ -195,7 +195,7 @@ function evt_click_music_item(evt) {
   delete jwt;
 
 }
-window.onload = function() {
+$(document).ready(function() {
   // api access token , channel_key
   var media = new MEDIA('7ge80tfvz51x2606', '7zllh4b5');
   var list = media.list();
@@ -212,12 +212,12 @@ window.onload = function() {
     document.getElementbyId('errMessage').innerHTML = list.msg;
   }
   $('.music-item').on('click', evt_click_music_item);
-  var player = getElement('player');
-  player.addEventListener('load', player_loaded);
+  var player = $('#player');
+  player.on('load', player_loaded);
   $(document).on('click', '.play', function() {
     var idx = $('.music-item.active').data('idx');
     if (idx == undefined) {
       $($('.music-item')[0]).click();
     }
   });
-};
+});
